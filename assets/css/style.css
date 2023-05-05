@@ -67,6 +67,7 @@ h1 {
 
 .central {
 	padding-top: 75px;
+	animation: fade-down 0.9s;
 }
 
 .central2 {
@@ -88,5 +89,19 @@ h1 {
 }
 
 footer {
+
 	background-color: #0092c4!important;
+z-index: 888888888;}
+
+
+@keyframes fade-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px) scale(0.9);	
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px) scale(1);	
+	}
+
 }
