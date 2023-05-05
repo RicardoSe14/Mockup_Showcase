@@ -1,63 +1,92 @@
-body{font-family: "roboto" !important;
+body {
+	background: rgb(81,140,204);
+	background: linear-gradient(180deg, rgba(81,140,204,1) 0%, rgba(146,197,252,1) 50%, rgba(146,197,252,1) 100%);
 }
 
-.card { margin-top: 30px;
-}
-
-.card-title {font-weight: 300 !important;
-    color: #212529;
-    font-size: 20px !important;
-
-}
-
-.empresa {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070;
-}
-
-.direccion {font-weight: 300 !important;
-    font-size: 13px !important;
-    color: #707070;}
-
-    .valor{text-align: right;
-
-    }
-
-.precio {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.precioofe {font-weight: 500 !important;
-    font-size: 20px !important;
-    color: #28A745;
-    display: inline-block;
-}
-
-.newstler {font-weight: 500 !important;
-    font-size: 21px !important;
-    padding-top: 30px ;}
-
-.casilla1 {margin-top: -15px !important;}
-
-.casilla2 {margin-top: -10px !important;}
-
-.btn-light {font-weight: 500 !important;
-    font-size: 16px !important;
-    color: #212529 !important;
-    height: 40px;
-    width: 112px;
-}
-
-.form-control {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070 !important;
+.bg-color {
+	position: relative;
+	width: 100%;
+	height: 32vh;
+	background: #92c5fc;
+	overflow: hidden;
 
 }
 
-footer p {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070;
+.bg-color .wave {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-image: url(../img/wd2.png);
+	background-size: 1000px 100px;
+}
+
+
+.wave.wave1 {
+	animation: w1 12s linear infinite;
+	z-index: 998;
+}
+
+.wave.wave2 {
+
+	animation: w1 6s linear infinite;
+	z-index: 997;
+	bottom: 15px;
+	opacity: 50%;
+}
+
+.wave.wave3 {
+
+	animation: w1 3s linear infinite;
+	z-index: 996;
+	bottom: 17px;
+	opacity: 25%;
+}
+
+@keyframes w1 {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: 1000px;
+	}
+}
+
+h1 {
+	font-size: calc(2.0rem + 1.5vw) !important;
+	font-family: "roboto" !important;
+}
+
+.descripccion {
+	font-family: "roboto" !important;
+	font-size: calc(1.0rem + 0.5vw) !important;
+	font-weight: 300;
+}
+
+
+.central {
+	padding-top: 75px;
+}
+
+.central2 {
+	display: flex;
+	align-items: center;
+}
+.boton {
+	background-color: rgba(81,140,204,1) !important;
+}
+
+#logoini {
+	font-size: calc(1.1rem + 0.5vw) !important;
+	font-family: "Rubik" !important;
+	color: rgb(60, 75, 244);
+}
+
+#enviar {
+	font-family: "Rubik" !important;
+}
+
+footer {
+	background-color: #0092c4!important;
 }
