@@ -1,6 +1,6 @@
 body {
 	background: rgb(81,140,204);
-	background: linear-gradient(180deg, rgba(81,140,204,1) 0%, rgba(146,197,252,1) 50%, rgba(146,197,252,1) 100%);
+	background: linear-gradient(180deg, rgba(0,146,196,1) 0%, rgba(146,197,252,1) 50%, rgba(146,197,252,1) 100%);
 }
 
 .bg-color {
@@ -66,7 +66,8 @@ h1 {
 
 
 .central {
-	padding-top: 75px;
+	height: auto;
+	padding-top: 100px;
 	animation: fade-down 0.9s;
 	position:relative;
 }
