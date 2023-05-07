@@ -1,13 +1,16 @@
 body {
-	background: rgb(81,140,204);
 	background: linear-gradient(180deg, rgba(81,140,204,1) 0%, rgba(146,197,252,1) 50%, rgba(146,197,252,1) 100%);
 }
 
+.central3 {
+	bottom: 0;
+	position: absolute;
+}
+
 .bg-color {
-	position: relative;
 	width: 100%;
 	height: 30vh;
-	background: #92c5fc;
+	background: transparent !important;
 	overflow: hidden;
 
 }
