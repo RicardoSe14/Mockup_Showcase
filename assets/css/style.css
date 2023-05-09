@@ -1,48 +1,19 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
 body {
-	background: rgb(81,140,204);
-	background: linear-gradient(180deg, rgba(0,146,196,1) 0%, rgba(146,197,252,1) 50%, rgba(146,197,252,1) 100%);
-}
+	background-color: #111113 !important}
+/*	background: linear-gradient(180deg, rgba(0,146,196,1) 0%, rgba(146,197,252,1) 50%, rgba(146,197,252,1) 100%);
+}*/
 
-.bg-color {
-	bottom: 0;
-	position: relative;
+.cinta {
 	width: 100%;
-	height: 30vh;
-	background: #92c5fc;
-	overflow: hidden;
-
-}
-
-.bg-color .wave {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100px;
-	background-image: url(../img/wd2.png);
-	background-size: 1000px 100px;
-}
-
-
-.wave.wave1 {
-	animation: w1 12s linear infinite;
-	z-index: 998;
-}
-
-.wave.wave2 {
-
-	animation: w1 6s linear infinite;
-	z-index: 997;
-	bottom: 15px;
-	opacity: 50%;
-}
-
-.wave.wave3 {
-
-	animation: w1 3s linear infinite;
-	z-index: 996;
-	bottom: 17px;
-	opacity: 25%;
+	height: 39px;
+	background-image: url(../img/Fondo.png) !important;
+	background-repeat: repeat;
+	animation: w1 60s linear infinite;
 }
 
 @keyframes w1 {
@@ -50,28 +21,27 @@ body {
 		background-position-x: 0;
 	}
 	100% {
-		background-position-x: 1000px;
+		background-position-x: 1216px;
 	}
 }
 
-h1 {
-	font-size: calc(2.0rem + 1.5vw) !important;
-	font-family: "roboto" !important;
-}
-
 .descripccion {
-	font-family: "roboto" !important;
-	font-size: calc(1.0rem + 0.5vw) !important;
-	font-weight: 300;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	color: #e63d42;
+	font-size: calc(1.0rem + 0.8vw) !important;
 }
 
+.titulo1{	
+	align-items: center;
+	font-size: calc(1.2rem + 2.8vw) !important;
+	font-family: "Oswald" !important;
+}
 
 .central {
 	bottom: 0;
-	height: auto;
+	position: relative;
 	padding-top: 100px;
-	animation: fade-down 0.9s;
-	position:relative;
 }
 
 .central2 {
@@ -79,34 +49,6 @@ h1 {
 	align-items: center;
 }
 .boton {
-	background-color: rgba(81,140,204,1) !important;
-}
-
-#logoini {
-	font-size: calc(1.1rem + 0.5vw) !important;
-	font-family: "Rubik" !important;
-	color: rgb(60, 75, 244);
-}
-
-#enviar {
-	font-family: "Rubik" !important;
-}
-
-footer {
-	background: rgba(0,146,196,1);
-	bottom: 0;
-	position: relative;
-z-index: 888888888;}
-
-
-@keyframes fade-down {
-	0% {
-		opacity: 0;
-		transform: translateY(-30px) scale(0.9);	
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px) scale(1);	
-	}
-
+	font-family: "PT Sans";
+	background-color: #e63d42!important;
 }
